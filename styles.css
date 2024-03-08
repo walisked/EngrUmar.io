@@ -12,6 +12,7 @@ header {
     padding: 50px;
 }
 
+
 nav {
     text-align: center;
     background: #333;
@@ -28,6 +29,20 @@ nav a {
 nav a:hover {
     color: #36D7B7;
 }
+
+/* ... Section styles ... */
+
+.section-container {
+    padding: 20px;
+}
+
+.section-content {
+    background-color: #3498db; /* Adjust the color as needed */
+    padding: 20px;
+    color: #fff;
+}
+
+
 
 section {
     padding: 20px;
