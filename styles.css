@@ -26,22 +26,13 @@ body {
   text-align: center;
   color: #fff;
 }
-/* .main-container {
-  background-image: url(WhatsApp\ Image\ 2024-03-16\ at\ 12.34.48\ AM.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  height: 100%;
-} */
-/* .text {
-  color: black;
-  font-weight: bold;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  
-} */
+.clock {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+
 
 nav {
   text-align: center; /* Align navigation links to the center */
