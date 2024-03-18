@@ -108,6 +108,91 @@ footer {
   .section-content {
     padding: 10px;
   }
+  .header {
+    flex-direction: column;
+    align-items: center;
+}
+.hero-content{
+  background-size:cover;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation ul {
+    flex-direction: column;
+}
+
+.navigation li {    .header {
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.navigation ul {
+  flex-direction: column;
+}
+
+.navigation li {
+  margin: 10px 0;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;    .header {
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation ul {
+    flex-direction: column;
+}
+
+.navigation li {
+    margin: 10px 0;
+}
+
+.hero-content {
+    width: 90%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+    margin: 10px 0;
+}
+
+.hero-content {
+    width: 90%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
 }
 
 /* Custom Styles for Specific Sections */
