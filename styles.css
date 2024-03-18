@@ -36,12 +36,25 @@ body {
 
 nav {
   text-align: center; /* Align navigation links to the center */
-  background: #333;
+  /* background: #333; */
   padding: 10px;
   position: fixed;
-  width: 100%;
+  width: 20%;
   top: 0;
   z-index: 1000;
+  margin-left: auto;
+}
+.nav-toggle{
+  margin-right: auto;
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.navigation li {
+  margin-left: 20px;
+  display: block;
 }
 
 nav a {
@@ -72,6 +85,28 @@ nav a:hover {
 .home-content {
   text-align: center;
 }
+.section-content{
+  padding: 20px;
+}
+.skills-content ul {
+  list-style: none;
+}
+
+.skills-content li {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.skill-image {
+  width: 100px; /* Adjust image size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.skill-name {
+  margin-top: 5px;
+  font-size: 1rem;
+}
 #skills ul {
   color: whitesmoke;
   list-style-type: none;
@@ -97,9 +132,7 @@ footer {
     height: auto;
   }
 
-  nav {
-    text-align: center; /* Center navigation links on small screens */
-  }
+
 
   nav a {
     margin: 5px 0;
@@ -115,6 +148,15 @@ footer {
 .hero-content{
   background-size:cover;
 }
+
+.navigation {
+  display: none; /* Hide the navigation menu by default */
+}
+
+.navigation.show {
+  display: block; /* Display the navigation menu when the show class is applied */
+}
+
 
 .navigation {
     margin-top: 20px;
