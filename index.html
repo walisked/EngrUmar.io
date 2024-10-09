@@ -1,5 +1,3 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umar Ayuba Rano - Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="hero">
-        <!-- Replace with your image URL -->
-        <div class="hero-content" style="background-image: url('./image/background.jpeg');">
+        <div class="hero-content" style="background-image: url('./image/futuristic-bg.jpeg');">
             <button class="nav-toggle" aria-label="Toggle Navigation Menu">
                 <span class="hamburger">
                     <p>&#9776;</p>
                 </span>
             </button>
-            <h1>Umar Ayuba Rano</h1>
-            <p>Software Engineer</p>
-            <div class="clock">
-                <span id="time"></span>
+            <div class="hero-text">
+                <h1>Umar Ayuba Rano</h1>
+                <p>Software Engineer</p>
+                <div class="clock">
+                    <span id="time"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -32,144 +32,89 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
     <div class="main-container">
-        <div class="text">
-            <div class="section-container">
-                <section id="home">
-                    <div class="section-content home-content">
-                        <h2>About Me</h2>
-                        <p>I am a passionate and results-driven software engineer with expertise in JavaScript. My
-                            journey
-                            in the world of programming has equipped me with a strong foundation in web development, and
-                            I
-                            continually strive to stay updated with the latest technologies.</p>
-                    </div>
-                </section>
-            </div>
+        <section id="about" class="section-container">
+            <h2>About Me</h2>
+            <p>I am a passionate and results-driven software engineer with expertise in JavaScript. My journey in the world of programming has equipped me with a strong foundation in web development, and I continually strive to stay updated with the latest technologies.</p>
+        </section>
 
-            <div class="section-container">
-                <section id="skills">
-                    <div class="section-content">
-                        <h2>Skills</h2>
-                        <ul>
-                            <li>
-                                <img src="./image/js.png" alt="Skill 1" class="skill-image">
-                                <p class="skill-name">JavaScript (ES6+)</p>
-                            </li>
-                            <li>
-                                <img src="./image/frame.png" alt="Skill 1" class="skill-image">
-                                <p>
-                                    Frameworks/Libraries: React, Node.js, Express
-                                </p>
-                            </li>
-                            <li>
-                                <img src="./image/db.jpg" alt="Skill 1" class="skill-image">
-                                <p>
-                                    Database: MongoDB, MySQL
-                                </p>
-                            </li>
-                            <li>
-                                <img src="./image/npm git.png" alt="Skill 1" class="skill-image">
-                                <p>Tools: Git, Webpack, npm</p>
-                            </li>
-                            <li>
-                                <img src="./image/test.png" alt="Skill 1" class="skill-image">
+        <section id="skills" class="section-container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>
+                    <img src="./image/js.png" alt="JavaScript">
+                    <p>JavaScript (ES6+)</p>
+                </li>
+                <li>
+                    <img src="./image/frame.png" alt="Frameworks">
+                    <p>React, Node.js, Express</p>
+                </li>
+                <li>
+                    <img src="./image/db.jpg" alt="Databases">
+                    <p>MongoDB, MySQL</p>
+                </li>
+                <li>
+                    <img src="./image/npm git.png" alt="Tools">
+                    <p>Git, Webpack, npm</p>
+                </li>
+                <li>
+                    <img src="./image/test.png" alt="Testing">
+                    <p>Jest, Mocha</p>
+                </li>
+                <li>
+                    <img src="./image/download.png" alt="Design">
+                    <p>Responsive Web Design, UI/UX principles</p>
+                </li>
+            </ul>
+        </section>
 
-                                <p>
-                                    Testing: Jest, Mocha
-                                </p>
-                            </li>
-                            <li>
-                                <img src="./image/download.png" alt="Skill 1" class="skill-image">
+        <section id="experience" class="section-container">
+            <h2>Experience</h2>
+            <h3>TIBIT ONLINE STORE - Software Developer (2021-2023)</h3>
+            <ul>
+                <li>Developed and maintained web applications using React and Node.js.</li>
+                <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
+                <li>Implemented and optimized backend services for scalability and performance.</li>
+            </ul>
+        </section>
 
-                                <p>
-                                    Design: Responsive Web Design, UI/UX principles
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
+        <section id="projects" class="section-container">
+            <h2>Projects</h2>
+            <h3>My Profile</h3>
+            <p>A personal portfolio to showcase my skills, experiences, and projects.</p>
+            <p><b>Technologies:</b> React.js, MongoDB</p>
 
-            <div class="section-container">
-                <section id="experience">
-                    <div class="section-content">
-                        <h2>Experience</h2>
-                        <h3>TIBIT ONLINE STORE - Software Developer (04/2021 - 06/2023)</h3>
-                        <ul>
-                            <li>Developed and maintained web applications using React and Node.js.</li>
-                            <li>Collaborated with cross-functional teams to deliver high-quality software solutions.
-                            </li>
-                            <li>Implemented and optimized backend services for scalability and performance.</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
+            <h3>AKAFTA!!</h3>
+            <p>An e-commerce website selling translated movies.</p>
+            <p><b>Technologies:</b> JavaScript, Tailwind CSS, Next.js</p>
+        </section>
 
-            <div class="section-container">
-                <section id="projects">
-                    <div class="section-content">
-                        <h2>Projects</h2>
-                        <h3>My Profile</h3>
-                        <p>Description: Design to express about myself as who I am.</p>
-                        <p>Technologies Used: React.js, MongoDB</p>
+        <section id="education" class="section-container">
+            <h2>Education</h2>
+            <p>Bachelor's Degree in Software Engineering, Bugema University (2021)</p>
+        </section>
 
-                        <h3>AKAFTA!!</h3>
-                        <p>Description: An E-commerce website selling translated movies and related fields.</p>
-                        <p>Technologies Used: JavaScript, Tailwindcss, Prima, MongoDB, NEXT.JS</p>
-                    </div>
-                </section>
-            </div>
+        <section id="contact" class="section-container">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: <a href="mailto:umararano@gmail.com">umararano@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/umar-ayuba-rano-90157b22a" target="_blank">Umar Ayuba Rano</a></li>
+                <li>Facebook: <a href="https://facebook.com/waliskedomar" target="_blank">Walisked Omar</a></li>
+            </ul>
+        </section>
 
-            <div class="section-container">
-                <section id="education">
-                    <div class="section-content">
-                        <h2>Education</h2>
-                        <p>Bachelor's Degree in Software Engineering and Application Development</p>
-                        <p>BUGEMA UNIVERSITY UGANDA | 2021</p>
-                    </div>
-                </section>
-            </div>
-
-            <div class="section-container">
-                <section id="certifications">
-                    <div class="section-content">
-                        <h2>Certifications</h2>
-                        <ul>
-                            <li>NYSC NATIONAL YOUTHS SERVICE CORPS | 2023</li>
-                            <li>Google Digital Garage</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-
-            <div class="section-container">
-                <section id="contact">
-                    <div class="section-content">
-                        <h2>Contact</h2>
-                        <ul>
-                            <li>Email: <a href="mailto:umararano@gmail.com">umararano@gmail.com</a></li>
-                            <li>LinkedIn: <a
-                                    href="https://www.linkedin.com/in/umar-ayuba-rano-90157b22a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                                    target="_blank">Umar Ayuba Rano</a></li>
-                            <li>Facebook: Walisked Omar</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-
-            <footer>
-                <p>&copy; 2024 Umar Ayuba Rano - Software Engineer</p>
-            </footer>
-        </div>
+        <footer>
+            <p>&copy; 2070 Umar Ayuba Rano - Software Engineer</p>
+        </footer>
     </div>
+
     <script src="main.js"></script>
-    </div>
-
 </body>
 
 </html>

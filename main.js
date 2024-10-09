@@ -1,3 +1,4 @@
+// Function to update time every second
 function updateTime() {
     const now = new Date();
     const hours = String(now.getHours()).padStart(2, '0');
@@ -7,46 +8,38 @@ function updateTime() {
     document.getElementById('time').textContent = timeString;
   }
   
-  // Update time every second
+  // Call the update time function immediately and set an interval to update every second
   setInterval(updateTime, 1000);
+  updateTime();  // Initial call to display the time right away
   
-  // Initial call to display time immediately
-  updateTime();
+  // Mobile navigation toggle script
+  document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navigation = document.querySelector('.navigation');
   
-  // script.js
-
-// script.js
-
-document.addEventListener('DOMContentLoaded', function() {
-  const navToggle = document.querySelector('.nav-toggle');
-  const navigation = document.querySelector('.navigation');
-
-  // Function to toggle navigation visibility
-  const toggleNavigation = () => {
-      navigation.classList.toggle('show');
-  };
-
-  navToggle.addEventListener('click', toggleNavigation);
-
-  // Function to check if the device is mobile
-  const isMobileDevice = () => {
-      return window.matchMedia('(max-width: 768px)').matches;
-  };
-
-  // Show navToggle only on mobile devices
-  if (isMobileDevice()) {
-      navToggle.style.display = 'block';
-  } else {
-      navToggle.style.display = 'none';
-  }
-
-  // Adjust navToggle visibility on window resize
-  window.addEventListener('resize', () => {
-      if (isMobileDevice()) {
-          navToggle.style.display = 'block';
-      } else {
-          navToggle.style.display = 'none';
-      }
+    // Function to toggle navigation visibility
+    const toggleNavigation = () => {
+        navigation.classList.toggle('show');
+    };
+  
+    navToggle.addEventListener('click', toggleNavigation);
+  
+    // Function to check if the device is mobile
+    const isMobileDevice = () => window.matchMedia('(max-width: 768px)').matches;
+  
+    // Show or hide navToggle based on device type
+    const adjustNavToggleVisibility = () => {
+        navToggle.style.display = isMobileDevice() ? 'block' : 'none';
+    };
+  
+    // Initial check to set the visibility of navToggle
+    adjustNavToggleVisibility();
+  
+    // Debounce resize event to avoid excessive function calls
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(adjustNavToggleVisibility, 150);
+    });
   });
-});
-
+  
