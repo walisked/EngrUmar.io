@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umar Ayuba Rano - Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="hero">
         <div class="hero-content" style="background-image: url('./image/futuristic-bg.jpeg');">
             <button class="nav-toggle" aria-label="Toggle Navigation Menu">
-                <span class="hamburger">
-                    <p>&#9776;</p>
-                </span>
+                <span class="hamburger">&#9776;</span>
             </button>
             <div class="hero-text">
                 <h1>Umar Ayuba Rano</h1>
@@ -26,91 +26,91 @@
             </div>
         </div>
     </div>
-
-    <nav class="navigation">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Navbar with Icons MENU ICON <i class="fa-sharp fa-solid fa-bars"></i> -->
+    <!-- Navbar with Icons -->
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#about"><i class="fa fa-fw fa-user"></i> About</a>
+        <a href="#projects"><i class="fa fa-fw fa-code"></i> Projects</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
 
     <div class="main-container">
         <section id="about" class="section-container">
-            <h2>About Me</h2>
-            <p>I am a passionate and results-driven software engineer with expertise in JavaScript. My journey in the world of programming has equipped me with a strong foundation in web development, and I continually strive to stay updated with the latest technologies.</p>
+            <h2>WELCOME</h2>
+            <P>
+                As a highly skilled Software Developer,
+                AI Engineer, and OWASP Security Tester,
+                I am dedicated to building innovative,
+                secure, and scalable software solutions
+                tailored to meet the unique needs of businesses
+                and organizations. With a strong foundation in
+                modern development practices and a deep understanding
+                of web application security through OWASP standards,
+                I bring a holistic approach to every project I undertake.
+                Whether you are looking for expert-level AI engineering,
+                secure coding practices, or comprehensive vulnerability
+                assessments, I am here to deliver results that exceed
+                your expectations. Explore my portfolio to learn more
+                about my skills, experience, and projects, or reach out
+                to discuss how I can help your business thrive with
+                cutting-edge technology and robust security.
+            </P>
         </section>
 
-        <section id="skills" class="section-container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>
-                    <img src="./image/js.png" alt="JavaScript">
-                    <p>JavaScript (ES6+)</p>
-                </li>
-                <li>
-                    <img src="./image/frame.png" alt="Frameworks">
-                    <p>React, Node.js, Express</p>
-                </li>
-                <li>
-                    <img src="./image/db.jpg" alt="Databases">
-                    <p>MongoDB, MySQL</p>
-                </li>
-                <li>
-                    <img src="./image/npm git.png" alt="Tools">
-                    <p>Git, Webpack, npm</p>
-                </li>
-                <li>
-                    <img src="./image/test.png" alt="Testing">
-                    <p>Jest, Mocha</p>
-                </li>
-                <li>
-                    <img src="./image/download.png" alt="Design">
-                    <p>Responsive Web Design, UI/UX principles</p>
-                </li>
-            </ul>
-        </section>
+        <div class="gallery-container">
+            <!-- Gallery Items -->
+            <div class="gallery-container">
+                <div class="gallery">
+                    <a target="_blank" href="img_5terre.jpg">
+                        <img src="image/htmlcss.jpg" alt="Cinque Terre">
+                    </a>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="img_forest.jpg">
+                        <img src="image/react tailwindcss.jpg" alt="Forest">
+                    </a>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="img_lights.jpg">
+                        <img src="image/mongodbmysql.jpg" alt="Northern Lights">
+                    </a>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="imgmountains.jpg">
+                        <img src="image/git webpack npm.jpg" alt="Mountains">
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <section id="experience" class="section-container">
-            <h2>Experience</h2>
-            <h3>TIBIT ONLINE STORE - Software Developer (2021-2023)</h3>
-            <ul>
-                <li>Developed and maintained web applications using React and Node.js.</li>
-                <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
-                <li>Implemented and optimized backend services for scalability and performance.</li>
-            </ul>
+            <h2>PROJECT</h2>
+            <h3>E-Commerce Platform Development and Security Testing</h3>
+            <h3> Community Radio Software Management System</h3>
+            <h3>Web Application Penetration Testing</h3>
         </section>
-
-        <section id="projects" class="section-container">
-            <h2>Projects</h2>
-            <h3>My Profile</h3>
-            <p>A personal portfolio to showcase my skills, experiences, and projects.</p>
-            <p><b>Technologies:</b> React.js, MongoDB</p>
-
-            <h3>AKAFTA!!</h3>
-            <p>An e-commerce website selling translated movies.</p>
-            <p><b>Technologies:</b> JavaScript, Tailwind CSS, Next.js</p>
-        </section>
-
-        <section id="education" class="section-container">
-            <h2>Education</h2>
-            <p>Bachelor's Degree in Software Engineering, Bugema University (2021)</p>
-        </section>
-
         <section id="contact" class="section-container">
             <h2>Contact</h2>
             <ul>
-                <li>Email: <a href="mailto:umararano@gmail.com">umararano@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/umar-ayuba-rano-90157b22a" target="_blank">Umar Ayuba Rano</a></li>
-                <li>Facebook: <a href="https://facebook.com/waliskedomar" target="_blank">Walisked Omar</a></li>
+                <i class="fa-sharp fa-regular fa-envelope">
+                    <a href="mailto:umararano@gmail.com"></a></li>
+                    <i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/umar-ayuba-rano-90157b22a"
+                            target="_blank"></a>
+
+                        <i class="fa-brands fa-github">
+                            <a href="https://facebook.com/waliskedomar" target="_blank"></a>
+
+                            <i class="fa-brands fa-facebook">
+                                <a href="https://facebook.com/waliskedomar" target="_blank"></a>
             </ul>
         </section>
 
         <footer>
-            <p>&copy; 2070 Umar Ayuba Rano - Software Engineer</p>
+            <p>&copy; 2024 SMS Enterprises - WALISKED</p>
         </footer>
     </div>
 
