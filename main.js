@@ -7,7 +7,15 @@ function updateTime() {
     const timeString = `${hours}:${minutes}:${seconds}`;
     document.getElementById('time').textContent = timeString;
   }
-  
+  // Script to change navbar background color on scroll
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });  
   // Call the update time function immediately and set an interval to update every second
   setInterval(updateTime, 1000);
   updateTime();  // Initial call to display the time right away
@@ -42,4 +50,9 @@ function updateTime() {
         resizeTimeout = setTimeout(adjustNavToggleVisibility, 150);
     });
   });
-  
+  // JavaScript to set the current year in the footer
+document.addEventListener('DOMContentLoaded', function() {
+    const yearElement = document.getElementById('year');
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+});

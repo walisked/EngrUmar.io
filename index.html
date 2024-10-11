@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umar Ayuba Rano - Software Engineer</title>
+
+    <!-- Linking the external CSS and fonts -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
@@ -12,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Hero Section with Background Image -->
     <div class="hero">
         <div class="hero-content" style="background-image: url('./image/futuristic-bg.jpeg');">
             <button class="nav-toggle" aria-label="Toggle Navigation Menu">
@@ -19,14 +22,14 @@
             </button>
             <div class="hero-text">
                 <h1>Umar Ayuba Rano</h1>
-                <p>Software Engineer</p>
+                <p>Software Engineer & Application Developer</p>
                 <div class="clock">
                     <span id="time"></span>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Navbar with Icons MENU ICON <i class="fa-sharp fa-solid fa-bars"></i> -->
+
     <!-- Navbar with Icons -->
     <div class="navbar">
         <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
@@ -35,85 +38,75 @@
         <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
     </div>
 
+    <!-- Main Content Container -->
     <div class="main-container">
+
+        <!-- About Section -->
         <section id="about" class="section-container">
             <h2>WELCOME</h2>
-            <P>
-                As a highly skilled Software Developer,
-                AI Engineer, and OWASP Security Tester,
-                I am dedicated to building innovative,
-                secure, and scalable software solutions
-                tailored to meet the unique needs of businesses
-                and organizations. With a strong foundation in
-                modern development practices and a deep understanding
-                of web application security through OWASP standards,
-                I bring a holistic approach to every project I undertake.
-                Whether you are looking for expert-level AI engineering,
-                secure coding practices, or comprehensive vulnerability
-                assessments, I am here to deliver results that exceed
-                your expectations. Explore my portfolio to learn more
-                about my skills, experience, and projects, or reach out
-                to discuss how I can help your business thrive with
-                cutting-edge technology and robust security.
-            </P>
+            <p>
+                As a highly skilled Software Developer, AI Engineer, and OWASP Security Tester, I am dedicated to
+                building innovative, secure, and scalable software solutions tailored to meet the unique needs of
+                businesses and organizations. With a strong foundation in modern development practices and a deep
+                understanding of web application security through OWASP standards, I bring a holistic approach to every
+                project I undertake. Whether you are looking for expert-level AI engineering, secure coding practices,
+                or
+                comprehensive vulnerability assessments, I am here to deliver results that exceed your expectations.
+            </p>
         </section>
 
+        <!-- Gallery Section -->
         <div class="gallery-container">
-            <!-- Gallery Items -->
-            <div class="gallery-container">
-                <div class="gallery">
-                    <a target="_blank" href="img_5terre.jpg">
-                        <img src="image/htmlcss.jpg" alt="Cinque Terre">
-                    </a>
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="img_forest.jpg">
-                        <img src="image/react tailwindcss.jpg" alt="Forest">
-                    </a>
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="img_lights.jpg">
-                        <img src="image/mongodbmysql.jpg" alt="Northern Lights">
-                    </a>
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="imgmountains.jpg">
-                        <img src="image/git webpack npm.jpg" alt="Mountains">
-                    </a>
-                </div>
+            <div class="gallery">
+                <a target="_blank" href="img_5terre.jpg">
+                    <img src="image/htmlcss.jpg" alt="HTML & CSS">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img_forest.jpg">
+                    <img src="image/react tailwindcss.jpg" alt="React & Tailwind CSS">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                    <img src="image/mongodbmysql.jpg" alt="MongoDB & MySQL">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="imgmountains.jpg">
+                    <img src="image/git webpack npm.jpg" alt="Git, Webpack, NPM">
+                </a>
             </div>
         </div>
 
+        <!-- Project/Experience Section -->
         <section id="experience" class="section-container">
-            <h2>PROJECT</h2>
+            <h2>PROJECTS</h2>
             <h3>E-Commerce Platform Development and Security Testing</h3>
-            <h3> Community Radio Software Management System</h3>
+            <h3>Community Radio Software Management System</h3>
             <h3>Web Application Penetration Testing</h3>
         </section>
+
+        <!-- Contact Section -->
         <section id="contact" class="section-container">
             <h2>Contact</h2>
-            <ul>
-                <i class="fa-sharp fa-regular fa-envelope">
-                    <a href="mailto:umararano@gmail.com"></a></li>
-                    <i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/umar-ayuba-rano-90157b22a"
-                            target="_blank"></a>
-
-                        <i class="fa-brands fa-github">
-                            <a href="https://facebook.com/waliskedomar" target="_blank"></a>
-
-                            <i class="fa-brands fa-facebook">
-                                <a href="https://facebook.com/waliskedomar" target="_blank"></a>
+            <ul class="social-links">
+                <li><a href="mailto:umararano@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/umar-ayuba-rano-90157b22a" target="_blank"><i
+                            class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/umar-ayuba-rano" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://facebook.com/waliskedomar" target="_blank"><i class="fa fa-facebook"></i></a></li>
             </ul>
         </section>
 
+        <!-- Footer Section -->
         <footer>
-            <p>&copy; 2024 SMS Enterprises - WALISKED</p>
+            <p id="footer-text">&copy; <span id="year"></span> SMS Enterprises - WALISKED</p>
         </footer>
+
     </div>
 
+    <!-- External JavaScript -->
     <script src="main.js"></script>
 </body>
 
